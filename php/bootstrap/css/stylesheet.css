@@ -1,0 +1,522 @@
+@import url("bootstrap.min.css");
+@import url(http://fonts.googleapis.com/css?family=Lato:400,900);
+
+@font-face {
+    font-family: 'Coco';
+    src: url('Cocogoose_trial.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /*color: #ffffff;*/
+}
+
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by its height */
+    margin: 0 auto -200px;
+    /* Pad bottom by footer height */
+    padding: 0 0 200px;
+}
+
+h1, h2, h3 {
+    /*font-family: 'Coco', sans-serif;*/
+    /*color: #ffffff;*/
+}
+
+footer {
+    height: 200px;
+    background-color: #FC7B44;
+    padding-top: 15px;
+}
+
+.text-vertical-center {
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 40vh;
+}
+
+.text-vertical-center h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+}
+
+/* SIDEMENU CODE
+_________________*/
+
+/* Custom Button Styles */
+
+    .btn-dark {
+        border-radius: 0;
+        color: #fff;
+        background-color: rgba(0,0,0,0.4);
+    }
+
+    .btn-dark:hover,
+    .btn-dark:focus,
+    .btn-dark:active {
+        color: #fff;
+        background-color: rgba(0,0,0,0.7);
+    }
+
+    .btn-light {
+        border-radius: 0;
+        color: #333;
+        background-color: rgb(255,255,255);
+    }
+
+    .btn-light:hover,
+    .btn-light:focus,
+    .btn-light:active {
+        color: #333;
+        background-color: rgba(255,255,255,0.8);
+    }
+
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Sidebar Styles */
+
+    #sidebar-wrapper {
+        z-index: 1000;
+        position: fixed;
+        right: 0;
+        width: 250px;
+        height: 100%;
+        margin-right: -250px;
+        overflow-y: auto;
+        background: #FC7B44;
+        -webkit-transition: all 0.4s ease 0s;
+        -moz-transition: all 0.4s ease 0s;
+        -ms-transition: all 0.4s ease 0s;
+        -o-transition: all 0.4s ease 0s;
+        transition: all 0.4s ease 0s;
+    }
+
+    .sidebar-nav {
+        position: absolute;
+        top: 0;
+        width: 250px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .sidebar-nav li {
+        text-indent: 20px;
+        line-height: 40px;
+    }
+
+    .sidebar-nav li a {
+        display: block;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .sidebar-nav li a:hover {
+        text-decoration: none;
+        color: #999;
+        background: rgba(255,255,255,0.2);
+    }
+
+    .sidebar-nav li a:active,
+    .sidebar-nav li a:focus {
+        text-decoration: none;
+    }
+
+    .sidebar-nav > .sidebar-brand {
+        height: 55px;
+        font-size: 18px;
+        line-height: 55px;
+    }
+
+    .sidebar-nav > .sidebar-brand a {
+        color: #fff;
+    }
+
+    .sidebar-nav > .sidebar-brand a:hover {
+        color: #999;
+        background: none;
+    }
+
+    #menu-toggle {
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+
+    #logo-toggle {
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    #sidebar-wrapper.active {
+        right: 250px;
+        width: 250px;
+        -webkit-transition: all 0.4s ease 0s;
+        -moz-transition: all 0.4s ease 0s;
+        -ms-transition: all 0.4s ease 0s;
+        -o-transition: all 0.4s ease 0s;
+        transition: all 0.4s ease 0s;
+    }
+
+    .toggle {
+        margin: 5px 5px 0 0;
+    }
+
+/* DuDrop Table
+________________*/
+
+.dudrop-table {
+    min-height: 100vh;
+    color: #000000;
+}
+
+.dudrop-table > table {
+    color: #000000;
+}
+
+.dudrop-table .col-lg-12 > h1 {
+    margin: 0;
+    padding: 50px;
+    font-size: 4.5em;
+    font-weight: 700;
+}
+
+.dudrop-table .col-lg-4 > h2 {
+    margin: 0;
+    padding: 5px 0 5px 0;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .dudrop-table .col-lg-12 > h1 {
+        margin: 0;
+        padding: 25px;
+        font-size: 2.5em;
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 768px) {
+    .dudrop-table .col-lg-4 > h2 {
+        margin: 0;
+        padding: 5px 0 5px 0;
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+}
+
+/* Option Panel
+________________*/
+
+.option-panel {
+    min-height: 100vh;
+}
+
+.option-panel .col-lg-12 > h2 {
+    margin: 0;
+    padding: 50px;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.option-panel .col-lg-6 > a {
+    padding: 50px;
+    font-size: 2em;
+}
+
+/* What We Do
+______________*/
+
+.whatwedo {
+    background-color: #84aca4;
+    min-height: 100vh;
+}
+
+.whatwedo .col-lg-12 > h1 {
+    margin: 0;
+    padding: 50px;
+    font-size: 4.5em;
+    font-weight: 700;
+}
+
+.whatwedo .col-lg-4 > h2 {
+    margin: 0;
+    padding: 5px 0 5px 0;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.whatwedo .col-lg-4 > img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.whatwedo .col-lg-4 > p {
+    padding: 5px 0 5px 0;
+}
+
+@media (max-width: 768px) {
+    .whatwedo .col-lg-12 > h1 {
+        margin: 0;
+        padding: 25px;
+        font-size: 2.5em;
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 768px) {
+    .whatwedo .col-lg-4 > h2 {
+        margin: 0;
+        padding: 5px 0 5px 0;
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+}
+
+.solutions {
+    background-color: #CFF09E;
+    min-height: 100vh;
+}
+
+.solutions .col-lg-12 > h1 {
+    margin: 0;
+    padding: 50px;
+    font-size: 4.5em;
+    font-weight: 700;
+}
+
+.solutions .col-lg-3 > img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.solutions .col-lg-3 > p {
+    padding: 5px 0 5px 0;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .solutions .col-lg-12 > h1 {
+        margin: 0;
+        padding: 25px;
+        font-size: 2.5em;
+        font-weight: 700;
+    }
+}
+
+/* Sign In
+___________*/
+
+.signin {
+    min-height: 100vh;
+    color: #ffffff;
+}
+
+.signin .col-lg-12 > h1 {
+    margin: 0;
+    padding: 50px;
+    font-size: 4.5em;
+    font-weight: 700;
+    color: #84ACA4;
+}
+
+@media (max-width: 768px) {
+    .signin .col-lg-12 > h1 {
+        margin: 0;
+        padding: 25px;
+        font-size: 2.5em;
+        font-weight: 700;
+    }
+}
+
+/* Sign In Box
+_______________*/
+
+    .form-signin {
+        max-width: 380px;
+        padding: 15px 35px 45px;
+        margin: 0 auto;
+        background-color: #84aca4;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .signin #form {
+        padding-top: 12vh;
+    }
+
+    @media (max-width: 768px) {
+        .signin #form {
+            padding-top: 0;
+        }
+    }
+
+    .form-signin-heading,
+    .checkbox {
+        margin-bottom: 30px;
+    }
+
+    .checkbox {
+        font-weight: normal;
+    }
+
+    .form-control {
+        position: relative;
+        font-size: 16px;
+        height: auto;
+        padding: 10px;
+        @include box-sizing(border-box);
+
+        /*&:focus {
+             z-index: 2;
+        }*/
+    }
+
+    input[type="text"] {
+        margin-bottom: -1px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    input[type="password"] {
+        margin-bottom: 20px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+/* Register
+____________*/
+
+.register {
+    min-height: 100vh;
+    color: #ffffff;
+}
+
+.register .col-lg-12 > h1 {
+    margin: 0;
+    padding: 50px;
+    font-size: 4.5em;
+    font-weight: 700;
+    color: #84ACA4;
+}
+
+@media (max-width: 768px) {
+    .register .col-lg-12 > h1 {
+        margin: 0;
+        padding: 25px;
+        font-size: 2.5em;
+        font-weight: 700;
+    }
+}
+
+/* Register Box
+________________*/
+
+.form-signin {
+    max-width: 380px;
+    padding: 15px 35px 45px;
+    margin: 0 auto;
+    background-color: #84aca4;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.register #form {
+    padding-top: 4vh;
+}
+
+@media (max-width: 768px) {
+    .register #form {
+        padding-top: 0;
+    }
+}
+
+.form-signin-heading,
+.checkbox {
+    margin-bottom: 30px;
+}
+
+.checkbox {
+    font-weight: normal;
+}
+
+.form-control {
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+@include box-sizing(border-box);
+
+    /*&:focus {
+         z-index: 2;
+    }*/
+}
+
+input[type="text"] {
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+input[type="password"] {
+    margin-bottom: 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+
+.contact {
+    background-color: #FFD573;
+    min-height: 100vh;
+}
+
+.contact .col-lg-12 > h1 {
+    margin: 0;
+    padding: 50px;
+    font-size: 4.5em;
+    font-weight: 700;
+}
+
+.contact .col-lg-10 > form {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+    .contact .col-lg-12 > h1 {
+        margin: 0;
+        padding: 25px;
+        font-size: 2.5em;
+        font-weight: 700;
+    }
+}
+
+.contact .col-lg-10 {
+    padding-top: 12vh;
+}
+
+@media (max-width: 768px) {
+    .contact .col-lg-10 {
+        padding-top: 0;
+    }
+}
